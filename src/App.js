@@ -29,11 +29,16 @@ class App extends Component {
   }
 
   render() {
+    console.log("App state:",this.state);
+    console.log("App props:",this.props);
+
     return (
       <div className="App">
         <Header score={this.state.score} status={this.state.status} topScore={this.state.topScore}/>
-        <ClickyGame increaseScore={this.increaseScore} updateTopScore={this.updateTopScore}/>
-        <Footer />
+          <div>
+            <ClickyGame increaseScore={this.increaseScore} updateTopScore={this.updateTopScore}/>
+          </div>
+ <Footer />
       </div>
     );
   }

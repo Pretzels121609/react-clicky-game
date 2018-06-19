@@ -7,6 +7,8 @@ import Score from '../Score';
 
 class Header extends Component {
   render() {
+    console.log("Header state:",this.state);
+    console.log("Header                        props:",this.props);
     return (
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
