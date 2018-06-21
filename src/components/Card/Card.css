@@ -4,3 +4,9 @@
     border: 1px solid black;
     margin: 20px;
 }
+.App-card img:hover {
+    width: 210px;
+    height: 210px;
+    box-shadow: 7px 10px 17px 2px #888888;
+    margin: 15px;
+}

@@ -34,7 +34,11 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Header score={this.state.score} status={this.state.status} topScore={this.state.topScore}/>
+        <Header
+          score={this.state.score}
+          status={this.state.status}
+          topScore={this.state.topScore}
+        />
           <div>
             <ClickyGame increaseScore={this.increaseScore} updateTopScore={this.updateTopScore}/>
           </div>

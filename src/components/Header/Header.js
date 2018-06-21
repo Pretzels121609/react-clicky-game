@@ -8,12 +8,12 @@ import Score from '../Score';
 class Header extends Component {
   render() {
     console.log("Header state:",this.state);
-    console.log("Header                        props:",this.props);
+    console.log("Header props:",this.props);
     return (
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <Title />
-          <Status status={this.props.status} />
+          <Status statusString={this.props.status} />
           <Score score={this.props.score} topScore={this.props.topScore}/>
         </header>
     );
