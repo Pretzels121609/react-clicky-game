@@ -1,13 +1,15 @@
 .App-header {
   background-color: purple;
-  height: 300px;
+  height: 125px;
   padding: 20px;
   color: white;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 60px;
+  display: inline-block;
+
 }
 
 @keyframes App-logo-spin {

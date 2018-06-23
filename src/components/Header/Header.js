@@ -10,11 +10,27 @@ class Header extends Component {
     console.log("Header state:",this.state);
     console.log("Header props:",this.props);
     return (
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Title />
-          <Status statusString={this.props.status} />
+        <header className="jumbotron App-header">
+         <div className="row">
+
+          <div className="col-4">
+            <img src={logo} className="App-logo" alt="logo" /><Title />
+          </div>
+
+          <div className="col-4">
+            <Status statusString={this.props.status} />
+          </div>
+          
+          <div className="col-4">
           <Score score={this.props.score} topScore={this.props.topScore}/>
+          </div>
+          
+
+        </div>
+
+      
+
+      
         </header>
     );
   }

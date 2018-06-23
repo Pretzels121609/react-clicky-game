@@ -8,7 +8,7 @@ class Card extends Component {
 
   render() {
     return (
-      <a className="App-card" onClick={this.handleClick}><img alt="Flower" src={this.props.image}/></a>
+      <div className="App-card col-sm-3 col-md-2" onClick={this.handleClick}><img src={this.props.image} alt=""/></div>
     );
   }
 }
