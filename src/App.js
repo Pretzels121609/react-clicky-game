@@ -42,7 +42,7 @@ class App extends Component {
           <div>
             <ClickyGame increaseScore={this.increaseScore} updateTopScore={this.updateTopScore}/>
           </div>
- <Footer />
+        <Footer />
       </div>
     );
   }
