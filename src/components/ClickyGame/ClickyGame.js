@@ -142,7 +142,7 @@ class ClickyGame extends Component {
     this.pick12RandomCards();
   }
 
-  // shuffle function goes here that shuffles the entire array
+  // shuffles the entire array
   shuffle = (array) => {
  
       let counter = array.length;
@@ -164,7 +164,7 @@ class ClickyGame extends Component {
       return array;
    }
 
-   // shuffles the cards that are in play
+   // shuffles the cards that are in play while the game is being played
    shuffleCards = () => {
      const flowerCards = this.state.flowerCards;
      this.setState(this.shuffle(flowerCards));

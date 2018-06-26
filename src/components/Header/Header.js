@@ -17,9 +17,9 @@ class Header extends Component {
             <img src={logo} className="App-logo" alt="logo" /><Title />
           </div>
 
-          <div className="col-6">
+          <div className="col-5">
             <div className="row">
-              <h5>Click on an image to earn points, but don't any more than once.</h5>
+              <h5>Click on each of the twelve images. But don't any image more than once.</h5>
             </div>
             <div className="row">  
               <Status statusString={this.props.status} />
@@ -27,7 +27,7 @@ class Header extends Component {
           </div>
      
           
-          <div className="col-3">
+          <div className="col-4">
           <Score score={this.props.score} topScore={this.props.topScore}/>
           </div>
           
