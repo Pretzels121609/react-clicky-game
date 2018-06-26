@@ -18,11 +18,11 @@ class Header extends Component {
           </div>
 
           <div className="col-6">
-            <div className="row">  
-            <Status statusString={this.props.status} />
-            </div>
             <div className="row">
-              {/* <h5>Click on an image to earn points, but don't any more than once.</h5> */}
+              <h5>Click on an image to earn points, but don't any more than once.</h5>
+            </div>
+            <div className="row">  
+              <Status statusString={this.props.status} />
             </div>
           </div>
      

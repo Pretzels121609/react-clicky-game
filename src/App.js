@@ -8,7 +8,7 @@ class App extends Component {
   state = {
     score: 0,
     topScore: 0,
-    status: "",
+    status: " ",
   }
 
   increaseScore = () => {
@@ -18,14 +18,22 @@ class App extends Component {
   }
 
   updateTopScore = (topScore) => {
-    this.setState({
-      topScore: topScore
-    })
+    if(topScore > this.state.topScore) {
+      this.setState({
+        topScore: topScore
+      })
+    }
   }
 
   updateStatus = (status) => {
     this.setState({
       status:status})
+  }
+
+  resetScore = () => {
+    this.setState({
+      score: 0
+    })
   }
 
   render() {
@@ -40,7 +48,13 @@ class App extends Component {
           topScore={this.state.topScore}
         />
           <div>
-            <ClickyGame increaseScore={this.increaseScore} updateTopScore={this.updateTopScore}/>
+            <ClickyGame
+              score={this.state.score}
+              increaseScore={this.increaseScore}
+              updateTopScore={this.updateTopScore}
+              updateStatus={this.updateStatus}
+              resetScore={this.resetScore}
+            />
           </div>
         <Footer />
       </div>
