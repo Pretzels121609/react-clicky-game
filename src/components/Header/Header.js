@@ -19,7 +19,7 @@ class Header extends Component {
 
           <div className="col-5">
             <div className="row">
-              <h5>Click on each of the twelve images. But don't any image more than once.</h5>
+              <h5>Click on each of the twelve images. But don't any image more than once or you'll lose the game.</h5>
             </div>
             <div className="row">  
               <Status statusString={this.props.status} />
